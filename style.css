@@ -1,0 +1,87 @@
+*{
+    /*resetar todos os elementos da pagina*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section{
+    display:flex;
+    flex-wrap:wrap;
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat; /*background não repete*/
+    background-size: cover; /*cobrir todo o espaço*/
+
+    background-attachment: fixed; /* Deixar o bground fixo para efeito parallax */
+
+    border-style: solid ;
+    border-color:rgb(38, 38, 37);
+
+}
+
+section:nth-of-type(1){ /*pseudo elemeto, serve para trabalhar com um elemento especifico.     O numero indica que a primeira section terá imagem */ 
+    background-image: url(https://images6.alphacoders.com/105/1052781.jpg) ;
+    height: 600px;
+    
+}  
+
+section:nth-of-type(3){ 
+    background-image: url(https://www.melhoresdestinos.com.br/wp-content/uploads/2020/05/chichen-itza-mexico-cancun-e1612344106331.jpg) ;
+    height: 600px;
+}  
+
+section:nth-of-type(5){ 
+    background-image: url(https://www.melhoresdestinos.com.br/wp-content/uploads/2016/04/india-taj-mahal-1009262_1280.jpg) ;
+    height: 600px;
+}  
+
+section:nth-of-type(7){ 
+    background-image: url(https://www.melhoresdestinos.com.br/wp-content/uploads/2017/09/roma-italia_1067.jpg) ;
+    height: 600px;
+}  
+
+section:nth-of-type(9){ 
+    background-image: url(https://rainhastragicas.files.wordpress.com/2017/08/nintchdbpict000297141129.jpg) ;
+    height: 600px;
+}  
+
+
+section:nth-of-type(11){ 
+    background-image: url(https://www.melhoresdestinos.com.br/wp-content/uploads/2018/11/jordania-capa2019-1-820x430.jpg) ;
+    height: 600px;
+} 
+
+
+section:nth-of-type(13){ 
+    background-image: url(https://www.melhoresdestinos.com.br/wp-content/uploads/2019/03/peru-cusco-machu-picchu1.jpg) ;
+    height: 600px;
+} 
+
+
+h1{
+    text-align: center;
+    font-size:xx-large;
+    padding-top: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style:inherit;
+}
+
+h2{
+    font-size:large;
+    word-wrap: break-word;
+   
+}
+
+@media (max-width: 800px) {
+    h2 {
+      font-size:medium;
+    }
+  }
+
+  @media (max-width: 600px) {
+    h2 {
+      font-size:small;
+    }
+  }
